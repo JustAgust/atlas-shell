@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -rla /.. /root/atlas-shell/basics -ru /boot
+ls -ls . .. /boot
