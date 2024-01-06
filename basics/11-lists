@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -rula /root /boot /..
+ls -ula /. /boot /..
