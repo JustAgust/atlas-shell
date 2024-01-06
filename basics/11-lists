@@ -1,2 +1,2 @@
 #!/bin/bash
-lsblk
+ls -la basics/atlas-shell/boot
