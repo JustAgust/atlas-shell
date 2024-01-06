@@ -1,0 +1,3 @@
+#!/bin/bash
+cp -nt basics/*.html -u ../*.html
+
