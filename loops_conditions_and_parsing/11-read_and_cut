@@ -3,5 +3,5 @@
 fcontent="/etc/passwd"
 while read -r fline
 do
-	cut -d: -f 1,2,6 "$fline"
+	cut -d: -f 1,3,6 "$fline"
 done < $fcontent
