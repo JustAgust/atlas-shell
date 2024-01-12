@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays the content of the file /etc/passwd, only display username, user id, Home directory path for the user
-while IFS=':' read -r username uid homedir
+fcontent="/etc/passwd"
+while read -r fline
 do
-   echo "Username: $username"
-   echo "User ID: $uid"
-   echo "Home Directory: $homedir"
-   echo "-----------------------------"
-done < /etc/passwd
+	cut -d: -f 1,2,6 "$fline"
+done < $fcontent
