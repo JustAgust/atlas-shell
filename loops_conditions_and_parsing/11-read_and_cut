@@ -5,4 +5,4 @@
 #do
 #	cut -d: -f 1,3,6 "$fline"
 #done < $fcontent
-while read -r LINE; do echo "$LINE" | cut -d ':' -f 1,3,6; done < /etc/passwd
+while read -r line; do echo '\'"$line"'\'" | cut -d: -f1,3,6; done < /etc/passwd
